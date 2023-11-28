@@ -1,0 +1,11 @@
+Package: BasicUtilR
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person("Jacob", "A. Rasmussen", , "jacob.rasmussen@bio.ku.dk", role = "cre",
+           comment = c(ORCID = "0000-0002-7710-8912"))
+Description: This package provides a comprehensive set of tools for conducting basic research on host-microbe interactions, with a focus on utilizing Omics data and multivariate analysis techniques. It offers a wide range of functionalities to preprocess and analyze data, enabling researchers to gain insights into the complex interplay between hosts and microbes. The package leverages advanced statistical methods and visualization techniques to uncover patterns, identify biomarkers, and explore the underlying mechanisms driving host-microbe interactions. With its user-friendly interface and robust functionality, this package serves as a valuable resource for researchers investigating the intricate dynamics of host-microbe relationships in various biological systems.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
