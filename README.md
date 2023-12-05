@@ -31,7 +31,13 @@ Main functions includes preprocessing multi-variate data from omics, such as fil
 Lets first install dependencies for the package.
 
 ```{R}
-dependencies <- c("MASS", "RColorBrewer", "magrittr", "broom.mixed", "caret", "cowplot", "doParallel", "future", "ggplot2", "ggpubr", "ggridges", "ggtext", "hilldiv", "iNEXT", "lmerTest", "performance", "plotROC", "pwr", "reshape2", "rstatix", "scales", "sva", "tidyverse", "wesanderson")
+
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("sva")
+
+dependencies <- c("MASS", "RColorBrewer", "magrittr", "broom.mixed", "caret", "cowplot", "doParallel", "future", "ggplot2", "ggpubr", "ggridges", "ggtext", "hilldiv", "iNEXT", "lmerTest", "performance", "plotROC", "pwr", "reshape2", "rstatix", "scales", "tidyverse", "wesanderson")
 
 # Install packages not yet installed from CRAN
 installed_packages <- dependencies %in% rownames(installed.packages())
